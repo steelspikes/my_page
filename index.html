@@ -1,16 +1,84 @@
-<html>
-  <body style="width: 100%; height: 100vh;background-color: black;margin:0;padding:0;display:flex;align-items:center;justify-content:center;">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
-      <h1 style="color: white; font-family: Consolas;">Brandon Salvador Martínez López</h1>
-      <p style="color: white; font-family: Consolas;">@steelspikes</p>
-      <marquee scrollamount="2" direction="right" style="font-family: Consolas; font-size: 60px; color: white;">Web design is my passion uwu 🧐</marquee>
-      <marquee scrollamount="4" direction="right" style="font-family: Consolas; font-size: 60px; color: white;">Web design is my passion uwu 🧐</marquee>
-      <marquee scrollamount="8" direction="right" style="font-family: Consolas; font-size: 60px; color: white;">Web design is my passion uwu 🧐</marquee>
-      <marquee scrollamount="16" direction="right" style="font-family: Consolas; font-size: 60px; color: white;">Web design is my passion uwu 🧐</marquee>
-      <marquee scrollamount="32" direction="right" style="font-family: Consolas; font-size: 60px; color: white;">Web design is my passion uwu 🧐</marquee>
-      <marquee scrollamount="64" direction="right" style="font-family: Consolas; font-size: 60px; color: white;">Web design is my passion uwu 🧐</marquee>
-      <marquee scrollamount="128" direction="right" style="font-family: Consolas; font-size: 60px; color: white;">You won't can read this 🧐</marquee>
-      <p style="font-family: Consolas; font-size: 25px; color: white;">Using this splash screen while I decide to create my own page</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hi!</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="icon" href="img/capy1.png" type="image/png">
+<link rel="preload" href="img/capy1.png" as="image">
+<link rel="preload" href="img/capy2.png" as="image">
+<link rel="preload" href="img/capy3.png" as="image">
+<link rel="preload" href="img/capy4.png" as="image">
+</head>
+<body>
+  <div class="main">
+    <button onclick="manageMenuButton()" id="menu-button" class="menu-button">X</button>
+    <nav id="menu">
+      <div class="image"></div>
+      <br>
+      <p class="social-media">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </p>
+      <ul>
+        <li><button href="" id="section-0" onclick="openSection(0)" onmouseover="setActive(0, true)" onmouseleave="setActive(0, false)"><div class="arrow">>&#160</div>Main</button></li>
+        <li><button href="" id="section-1" onclick="openSection(1)" onmouseover="setActive(1, true)" onmouseleave="setActive(1, false)"><div class="arrow">>&#160</div>About</button></li>
+        <li><button href="" id="section-2" onclick="openSection(2)" onmouseover="setActive(2, true)" onmouseleave="setActive(2, false)"><div class="arrow">>&#160</div>Profile</button></li>
+        <li><button href="" id="section-3" onclick="openSection(3)" onmouseover="setActive(3, true)" onmouseleave="setActive(3, false)"><div class="arrow">>&#160</div>Interests</button></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="page main-page active-page" id="page-0">
+        <h1 class="delay-1">Hi!, Salvador here</h1>
+        <h2 class="delay-2">WOW!</h2>
+        <p class="delay-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quos illo quam distinctio iure fugit, qui placeat officiis minus harum nisi inventore doloribus sed facilis a possimus accusamus itaque aliquam!</p>
+      </div>
+
+      <div class="page content-page" id="page-1">
+        <h1 class="delay-2">About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+      </div>
+
+      <div class="page content-page" id="page-2">
+        <h1 class="delay-2">Profile</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+
+      <div class="page content-page" id="page-3">
+        <h1 class="delay-2">Interests</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius quos dignissimos porro voluptate quod consequuntur libero laudantium in amet ad quibusdam officia saepe nisi, sunt aperiam, ea fugit illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Tempora culpa nulla asperiores neque aut dolor ipsam sed? Aperiam error explicabo earum inventore maiores laborum, nihil doloribus blanditiis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
     </div>
-  </body>
+    <canvas id="animationCanvas"></canvas>
+  </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
 </html>
